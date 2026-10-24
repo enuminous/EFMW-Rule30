@@ -1,0 +1,898 @@
+{
+  "official_kit_commit": "3eca23c0a9fa6b153313655e6d51835406c2d06e",
+  "problem1_solved": false,
+  "uniform_escape_proved": false,
+  "linear_escape_proved": false,
+  "steps": [
+    {
+      "label": "kit-head",
+      "exit_code": 0
+    },
+    {
+      "label": "kit-tracked-diff",
+      "exit_code": 0
+    },
+    {
+      "label": "lean-version",
+      "exit_code": 0
+    },
+    {
+      "label": "core-build",
+      "exit_code": 0
+    },
+    {
+      "label": "compile-Rule30SearchV2",
+      "exit_code": 0
+    },
+    {
+      "label": "kernel-Rule30SearchV2",
+      "exit_code": 0
+    },
+    {
+      "label": "compile-Rule30AttemptV3",
+      "exit_code": 0
+    },
+    {
+      "label": "kernel-Rule30AttemptV3",
+      "exit_code": 0
+    },
+    {
+      "label": "full-goal-rejection",
+      "exit_code": 1
+    }
+  ],
+  "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+  "modules": [
+    {
+      "module": "Rule30SearchV2",
+      "theorem_count": 20,
+      "source_sha256": "4ceebdf0f662d4ac6a068c3be8b086acc6a24288d5109e526d3058c4cc64bf21",
+      "replay": {
+        "claim": "partial",
+        "declared": [
+          {
+            "kind": "def",
+            "name": "Rule30SearchV2.Supported",
+            "standardAxioms": true
+          },
+          {
+            "kind": "def",
+            "name": "Rule30SearchV2.UniformFiniteAlternationEscape",
+            "standardAxioms": true
+          },
+          {
+            "kind": "def",
+            "name": "Rule30SearchV2.allBreak",
+            "standardAxioms": true
+          },
+          {
+            "kind": "theorem",
+            "name": "Rule30SearchV2.allBreak_sound",
+            "standardAxioms": true
+          },
+          {
+            "kind": "def",
+            "name": "Rule30SearchV2.breaks",
+            "standardAxioms": true
+          },
+          {
+            "kind": "theorem",
+            "name": "Rule30SearchV2.breaks_false_sound",
+            "standardAxioms": true
+          },
+          {
+            "kind": "theorem",
+            "name": "Rule30SearchV2.breaks_sound",
+            "standardAxioms": true
+          },
+          {
+            "kind": "theorem",
+            "name": "Rule30SearchV2.cell_right_zero",
+            "standardAxioms": true
+          },
+          {
+            "kind": "theorem",
+            "name": "Rule30SearchV2.center_rows",
+            "standardAxioms": true
+          },
+          {
+            "kind": "theorem",
+            "name": "Rule30SearchV2.finite_radius_0",
+            "standardAxioms": true
+          },
+          {
+            "kind": "theorem",
+            "name": "Rule30SearchV2.finite_radius_1",
+            "standardAxioms": true
+          },
+          {
+            "kind": "theorem",
+            "name": "Rule30SearchV2.finite_radius_2",
+            "standardAxioms": true
+          },
+          {
+            "kind": "theorem",
+            "name": "Rule30SearchV2.finite_radius_3",
+            "standardAxioms": true
+          },
+          {
+            "kind": "theorem",
+            "name": "Rule30SearchV2.finite_radius_4",
+            "standardAxioms": true
+          },
+          {
+            "kind": "theorem",
+            "name": "Rule30SearchV2.finite_radius_5",
+            "standardAxioms": true
+          },
+          {
+            "kind": "theorem",
+            "name": "Rule30SearchV2.finite_radius_6",
+            "standardAxioms": true
+          },
+          {
+            "kind": "def",
+            "name": "Rule30SearchV2.grow",
+            "standardAxioms": true
+          },
+          {
+            "kind": "theorem",
+            "name": "Rule30SearchV2.no_alternating_tail_of_uniform_escape",
+            "standardAxioms": true
+          },
+          {
+            "kind": "theorem",
+            "name": "Rule30SearchV2.refuted_bound_at_radius_5",
+            "standardAxioms": true
+          },
+          {
+            "kind": "theorem",
+            "name": "Rule30SearchV2.refuted_bound_at_radius_9",
+            "standardAxioms": true
+          },
+          {
+            "kind": "theorem",
+            "name": "Rule30SearchV2.restart",
+            "standardAxioms": true
+          },
+          {
+            "kind": "def",
+            "name": "Rule30SearchV2.rows",
+            "standardAxioms": true
+          },
+          {
+            "kind": "theorem",
+            "name": "Rule30SearchV2.rows_exact",
+            "standardAxioms": true
+          },
+          {
+            "kind": "theorem",
+            "name": "Rule30SearchV2.seed_row_supported",
+            "standardAxioms": true
+          },
+          {
+            "kind": "theorem",
+            "name": "Rule30SearchV2.support_bounds_onset",
+            "standardAxioms": true
+          },
+          {
+            "kind": "def",
+            "name": "Rule30SearchV2.unpack",
+            "standardAxioms": true
+          },
+          {
+            "kind": "theorem",
+            "name": "Rule30SearchV2.unpack_grow",
+            "standardAxioms": true
+          },
+          {
+            "kind": "theorem",
+            "name": "Rule30SearchV2.breaks.eq_1",
+            "standardAxioms": true
+          },
+          {
+            "kind": "theorem",
+            "name": "Rule30SearchV2.breaks.eq_2",
+            "standardAxioms": true
+          },
+          {
+            "kind": "theorem",
+            "name": "Rule30SearchV2.breaks.eq_def",
+            "standardAxioms": true
+          },
+          {
+            "kind": "def",
+            "name": "Rule30SearchV2.breaks.match_1",
+            "standardAxioms": true
+          },
+          {
+            "kind": "def",
+            "name": "Rule30SearchV2.cell_right_zero.match_1_1",
+            "standardAxioms": true
+          },
+          {
+            "kind": "theorem",
+            "name": "Rule30SearchV2.grow.eq_1",
+            "standardAxioms": true
+          },
+          {
+            "kind": "def",
+            "name": "Rule30SearchV2.restart.match_1_1",
+            "standardAxioms": true
+          },
+          {
+            "kind": "theorem",
+            "name": "Rule30SearchV2.rows.eq_1",
+            "standardAxioms": true
+          },
+          {
+            "kind": "theorem",
+            "name": "Rule30SearchV2.rows.eq_2",
+            "standardAxioms": true
+          },
+          {
+            "kind": "theorem",
+            "name": "Rule30SearchV2.rows.eq_def",
+            "standardAxioms": true
+          },
+          {
+            "kind": "def",
+            "name": "Rule30SearchV2.rows.match_1",
+            "standardAxioms": true
+          },
+          {
+            "kind": "def",
+            "name": "Rule30SearchV2.rows_exact.match_1_1",
+            "standardAxioms": true
+          },
+          {
+            "kind": "theorem",
+            "name": "Rule30SearchV2.unpack.eq_1",
+            "standardAxioms": true
+          }
+        ],
+        "headlines": [
+          {
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ],
+            "found": true,
+            "kind": "theorem",
+            "name": "Rule30SearchV2.unpack_grow",
+            "ok": true,
+            "problems": [],
+            "typeMatches": true
+          },
+          {
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ],
+            "found": true,
+            "kind": "theorem",
+            "name": "Rule30SearchV2.rows_exact",
+            "ok": true,
+            "problems": [],
+            "typeMatches": true
+          },
+          {
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ],
+            "found": true,
+            "kind": "theorem",
+            "name": "Rule30SearchV2.breaks_sound",
+            "ok": true,
+            "problems": [],
+            "typeMatches": true
+          },
+          {
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ],
+            "found": true,
+            "kind": "theorem",
+            "name": "Rule30SearchV2.allBreak_sound",
+            "ok": true,
+            "problems": [],
+            "typeMatches": true
+          },
+          {
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "found": true,
+            "kind": "theorem",
+            "name": "Rule30SearchV2.support_bounds_onset",
+            "ok": true,
+            "problems": [],
+            "typeMatches": true
+          },
+          {
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ],
+            "found": true,
+            "kind": "theorem",
+            "name": "Rule30SearchV2.center_rows",
+            "ok": true,
+            "problems": [],
+            "typeMatches": true
+          },
+          {
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ],
+            "found": true,
+            "kind": "theorem",
+            "name": "Rule30SearchV2.breaks_false_sound",
+            "ok": true,
+            "problems": [],
+            "typeMatches": true
+          },
+          {
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ],
+            "found": true,
+            "kind": "theorem",
+            "name": "Rule30SearchV2.cell_right_zero",
+            "ok": true,
+            "problems": [],
+            "typeMatches": true
+          },
+          {
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ],
+            "found": true,
+            "kind": "theorem",
+            "name": "Rule30SearchV2.seed_row_supported",
+            "ok": true,
+            "problems": [],
+            "typeMatches": true
+          },
+          {
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ],
+            "found": true,
+            "kind": "theorem",
+            "name": "Rule30SearchV2.restart",
+            "ok": true,
+            "problems": [],
+            "typeMatches": true
+          },
+          {
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ],
+            "found": true,
+            "kind": "theorem",
+            "name": "Rule30SearchV2.no_alternating_tail_of_uniform_escape",
+            "ok": true,
+            "problems": [],
+            "typeMatches": true
+          },
+          {
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ],
+            "found": true,
+            "kind": "theorem",
+            "name": "Rule30SearchV2.finite_radius_0",
+            "ok": true,
+            "problems": [],
+            "typeMatches": true
+          },
+          {
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ],
+            "found": true,
+            "kind": "theorem",
+            "name": "Rule30SearchV2.finite_radius_1",
+            "ok": true,
+            "problems": [],
+            "typeMatches": true
+          },
+          {
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ],
+            "found": true,
+            "kind": "theorem",
+            "name": "Rule30SearchV2.finite_radius_2",
+            "ok": true,
+            "problems": [],
+            "typeMatches": true
+          },
+          {
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ],
+            "found": true,
+            "kind": "theorem",
+            "name": "Rule30SearchV2.finite_radius_3",
+            "ok": true,
+            "problems": [],
+            "typeMatches": true
+          },
+          {
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ],
+            "found": true,
+            "kind": "theorem",
+            "name": "Rule30SearchV2.finite_radius_4",
+            "ok": true,
+            "problems": [],
+            "typeMatches": true
+          },
+          {
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ],
+            "found": true,
+            "kind": "theorem",
+            "name": "Rule30SearchV2.finite_radius_5",
+            "ok": true,
+            "problems": [],
+            "typeMatches": true
+          },
+          {
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ],
+            "found": true,
+            "kind": "theorem",
+            "name": "Rule30SearchV2.finite_radius_6",
+            "ok": true,
+            "problems": [],
+            "typeMatches": true
+          },
+          {
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ],
+            "found": true,
+            "kind": "theorem",
+            "name": "Rule30SearchV2.refuted_bound_at_radius_5",
+            "ok": true,
+            "problems": [],
+            "typeMatches": true
+          },
+          {
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ],
+            "found": true,
+            "kind": "theorem",
+            "name": "Rule30SearchV2.refuted_bound_at_radius_9",
+            "ok": true,
+            "problems": [],
+            "typeMatches": true
+          }
+        ],
+        "importsStatements": true,
+        "module": "Rule30SearchV2",
+        "newAxioms": [],
+        "official": [],
+        "reasons": [],
+        "replay": {
+          "constants": 112,
+          "ok": true
+        },
+        "verdict": "pass",
+        "verifiedTargets": []
+      }
+    },
+    {
+      "module": "Rule30AttemptV3",
+      "theorem_count": 18,
+      "source_sha256": "5c6fa65114722c606eb9f303b0727c464dfdc53b1fc561a4a5ca180df8dc989c",
+      "replay": {
+        "claim": "partial",
+        "declared": [
+          {
+            "kind": "def",
+            "name": "Rule30AttemptV3.AlternatesThrough",
+            "standardAxioms": true
+          },
+          {
+            "kind": "def",
+            "name": "Rule30AttemptV3.LinearEscape",
+            "standardAxioms": true
+          },
+          {
+            "kind": "def",
+            "name": "Rule30AttemptV3.Supported",
+            "standardAxioms": true
+          },
+          {
+            "kind": "def",
+            "name": "Rule30AttemptV3.UniformEscape",
+            "standardAxioms": true
+          },
+          {
+            "kind": "def",
+            "name": "Rule30AttemptV3.blockCount",
+            "standardAxioms": true
+          },
+          {
+            "kind": "theorem",
+            "name": "Rule30AttemptV3.cell_right_zero",
+            "standardAxioms": true
+          },
+          {
+            "kind": "def",
+            "name": "Rule30AttemptV3.delta",
+            "standardAxioms": true
+          },
+          {
+            "kind": "theorem",
+            "name": "Rule30AttemptV3.local_difference",
+            "standardAxioms": true
+          },
+          {
+            "kind": "theorem",
+            "name": "Rule30AttemptV3.masked_difference",
+            "standardAxioms": true
+          },
+          {
+            "kind": "theorem",
+            "name": "Rule30AttemptV3.masking_counterexample",
+            "standardAxioms": true
+          },
+          {
+            "kind": "theorem",
+            "name": "Rule30AttemptV3.no_black_first_alternating_tail_of_linear",
+            "standardAxioms": true
+          },
+          {
+            "kind": "theorem",
+            "name": "Rule30AttemptV3.no_black_first_alternating_tail_of_uniform",
+            "standardAxioms": true
+          },
+          {
+            "kind": "theorem",
+            "name": "Rule30AttemptV3.no_block_score_descent",
+            "standardAxioms": true
+          },
+          {
+            "kind": "def",
+            "name": "Rule30AttemptV3.rankWitness",
+            "standardAxioms": true
+          },
+          {
+            "kind": "theorem",
+            "name": "Rule30AttemptV3.rank_witness_after_two",
+            "standardAxioms": true
+          },
+          {
+            "kind": "theorem",
+            "name": "Rule30AttemptV3.rank_witness_alternates",
+            "standardAxioms": true
+          },
+          {
+            "kind": "theorem",
+            "name": "Rule30AttemptV3.rank_witness_counts",
+            "standardAxioms": true
+          },
+          {
+            "kind": "theorem",
+            "name": "Rule30AttemptV3.residual_balance",
+            "standardAxioms": true
+          },
+          {
+            "kind": "theorem",
+            "name": "Rule30AttemptV3.residual_step_when_center_matches",
+            "standardAxioms": true
+          },
+          {
+            "kind": "theorem",
+            "name": "Rule30AttemptV3.restart",
+            "standardAxioms": true
+          },
+          {
+            "kind": "def",
+            "name": "Rule30AttemptV3.score",
+            "standardAxioms": true
+          },
+          {
+            "kind": "theorem",
+            "name": "Rule30AttemptV3.score_mono",
+            "standardAxioms": true
+          },
+          {
+            "kind": "theorem",
+            "name": "Rule30AttemptV3.seed_residual_edge",
+            "standardAxioms": true
+          },
+          {
+            "kind": "theorem",
+            "name": "Rule30AttemptV3.seed_supported",
+            "standardAxioms": true
+          },
+          {
+            "kind": "theorem",
+            "name": "Rule30AttemptV3.uniform_of_linear",
+            "standardAxioms": true
+          },
+          {
+            "kind": "theorem",
+            "name": "Rule30AttemptV3.xor_false_iff",
+            "standardAxioms": true
+          },
+          {
+            "kind": "def",
+            "name": "Rule30AttemptV3.cell_right_zero.match_1_1",
+            "standardAxioms": true
+          },
+          {
+            "kind": "def",
+            "name": "Rule30AttemptV3.restart.match_1_1",
+            "standardAxioms": true
+          },
+          {
+            "kind": "theorem",
+            "name": "Rule30AttemptV3.score.eq_1",
+            "standardAxioms": true
+          },
+          {
+            "kind": "theorem",
+            "name": "Rule30AttemptV3.score.eq_2",
+            "standardAxioms": true
+          },
+          {
+            "kind": "theorem",
+            "name": "Rule30AttemptV3.score.eq_def",
+            "standardAxioms": true
+          },
+          {
+            "kind": "def",
+            "name": "Rule30AttemptV3.score.match_1",
+            "standardAxioms": true
+          },
+          {
+            "kind": "def",
+            "name": "Rule30AttemptV3.score_mono.match_1_1",
+            "standardAxioms": true
+          }
+        ],
+        "headlines": [
+          {
+            "axioms": [],
+            "found": true,
+            "kind": "theorem",
+            "name": "Rule30AttemptV3.xor_false_iff",
+            "ok": true,
+            "problems": [],
+            "typeMatches": true
+          },
+          {
+            "axioms": [],
+            "found": true,
+            "kind": "theorem",
+            "name": "Rule30AttemptV3.local_difference",
+            "ok": true,
+            "problems": [],
+            "typeMatches": true
+          },
+          {
+            "axioms": [],
+            "found": true,
+            "kind": "theorem",
+            "name": "Rule30AttemptV3.masked_difference",
+            "ok": true,
+            "problems": [],
+            "typeMatches": true
+          },
+          {
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ],
+            "found": true,
+            "kind": "theorem",
+            "name": "Rule30AttemptV3.residual_step_when_center_matches",
+            "ok": true,
+            "problems": [],
+            "typeMatches": true
+          },
+          {
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ],
+            "found": true,
+            "kind": "theorem",
+            "name": "Rule30AttemptV3.residual_balance",
+            "ok": true,
+            "problems": [],
+            "typeMatches": true
+          },
+          {
+            "axioms": [],
+            "found": true,
+            "kind": "theorem",
+            "name": "Rule30AttemptV3.masking_counterexample",
+            "ok": true,
+            "problems": [],
+            "typeMatches": true
+          },
+          {
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ],
+            "found": true,
+            "kind": "theorem",
+            "name": "Rule30AttemptV3.seed_residual_edge",
+            "ok": true,
+            "problems": [],
+            "typeMatches": true
+          },
+          {
+            "axioms": [
+              "propext"
+            ],
+            "found": true,
+            "kind": "theorem",
+            "name": "Rule30AttemptV3.rank_witness_alternates",
+            "ok": true,
+            "problems": [],
+            "typeMatches": true
+          },
+          {
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ],
+            "found": true,
+            "kind": "theorem",
+            "name": "Rule30AttemptV3.rank_witness_after_two",
+            "ok": true,
+            "problems": [],
+            "typeMatches": true
+          },
+          {
+            "axioms": [],
+            "found": true,
+            "kind": "theorem",
+            "name": "Rule30AttemptV3.rank_witness_counts",
+            "ok": true,
+            "problems": [],
+            "typeMatches": true
+          },
+          {
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ],
+            "found": true,
+            "kind": "theorem",
+            "name": "Rule30AttemptV3.score_mono",
+            "ok": true,
+            "problems": [],
+            "typeMatches": true
+          },
+          {
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ],
+            "found": true,
+            "kind": "theorem",
+            "name": "Rule30AttemptV3.no_block_score_descent",
+            "ok": true,
+            "problems": [],
+            "typeMatches": true
+          },
+          {
+            "axioms": [],
+            "found": true,
+            "kind": "theorem",
+            "name": "Rule30AttemptV3.uniform_of_linear",
+            "ok": true,
+            "problems": [],
+            "typeMatches": true
+          },
+          {
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ],
+            "found": true,
+            "kind": "theorem",
+            "name": "Rule30AttemptV3.cell_right_zero",
+            "ok": true,
+            "problems": [],
+            "typeMatches": true
+          },
+          {
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ],
+            "found": true,
+            "kind": "theorem",
+            "name": "Rule30AttemptV3.seed_supported",
+            "ok": true,
+            "problems": [],
+            "typeMatches": true
+          },
+          {
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ],
+            "found": true,
+            "kind": "theorem",
+            "name": "Rule30AttemptV3.restart",
+            "ok": true,
+            "problems": [],
+            "typeMatches": true
+          },
+          {
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ],
+            "found": true,
+            "kind": "theorem",
+            "name": "Rule30AttemptV3.no_black_first_alternating_tail_of_uniform",
+            "ok": true,
+            "problems": [],
+            "typeMatches": true
+          },
+          {
+            "axioms": [
+              "propext",
+              "Quot.sound"
+            ],
+            "found": true,
+            "kind": "theorem",
+            "name": "Rule30AttemptV3.no_black_first_alternating_tail_of_linear",
+            "ok": true,
+            "problems": [],
+            "typeMatches": true
+          }
+        ],
+        "importsStatements": true,
+        "module": "Rule30AttemptV3",
+        "newAxioms": [],
+        "official": [],
+        "reasons": [],
+        "replay": {
+          "constants": 53,
+          "ok": true
+        },
+        "verdict": "pass",
+        "verifiedTargets": []
+      }
+    }
+  ],
+  "full_goal_rejected": true,
+  "status": "PARTIAL_AND_CONDITIONAL_LEMMAS_KERNEL_REPLAYED"
+}

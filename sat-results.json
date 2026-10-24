@@ -1,0 +1,63 @@
+{
+  "target": "H(R) <= 2R+2",
+  "classification": "conjecture under attack",
+  "solver_version": "5.3.1",
+  "records": [
+    {
+      "radius": 11,
+      "horizon_inclusive": 24,
+      "solver": "unsat",
+      "elapsed_seconds": 0.103
+    },
+    {
+      "radius": 12,
+      "horizon_inclusive": 26,
+      "solver": "unsat",
+      "elapsed_seconds": 0.106
+    },
+    {
+      "radius": 13,
+      "horizon_inclusive": 28,
+      "solver": "unsat",
+      "elapsed_seconds": 0.127
+    },
+    {
+      "radius": 14,
+      "horizon_inclusive": 30,
+      "solver": "unsat",
+      "elapsed_seconds": 0.14
+    },
+    {
+      "radius": 15,
+      "horizon_inclusive": 32,
+      "solver": "unsat",
+      "elapsed_seconds": 0.195
+    },
+    {
+      "radius": 16,
+      "horizon_inclusive": 34,
+      "solver": "unsat",
+      "elapsed_seconds": 0.187
+    },
+    {
+      "radius": 20,
+      "horizon_inclusive": 42,
+      "solver": "unsat",
+      "elapsed_seconds": 0.254
+    },
+    {
+      "radius": 24,
+      "horizon_inclusive": 50,
+      "solver": "unsat",
+      "elapsed_seconds": 0.375
+    },
+    {
+      "radius": 32,
+      "horizon_inclusive": 66,
+      "solver": "unsat",
+      "elapsed_seconds": 2.607
+    }
+  ],
+  "universal_theorem_proved": false,
+  "problem1_solved": false
+}

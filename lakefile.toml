@@ -1,0 +1,15 @@
+name = "efmw-rule30"
+version = "0.1.0"
+defaultTargets = ["Rule30AttemptV3"]
+
+[[require]]
+name = "rule30prize"
+git = "https://github.com/WolframInstitute/Rule30PrizeKit.git"
+rev = "3eca23c0a9fa6b153313655e6d51835406c2d06e"
+subDir = "lean"
+
+[[lean_lib]]
+name = "Rule30SearchV2"
+
+[[lean_lib]]
+name = "Rule30AttemptV3"

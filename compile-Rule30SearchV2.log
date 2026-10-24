@@ -1,0 +1,27 @@
+Rule30SearchV2.lean:27:8: warning: This simp argument is unused:
+  Nat.testBit_xor
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [unpack, show ¬p + ((K : Int) + 1) < 0 by omega, show p - 1 + (K : Int) < 0 by omega,
+    show p + (K : Int) < 0 by omega, show ¬p + 1 + (K : Int) < 0 by omega, hn0, hn1, grow, rule, Nat.testBit_or,
+    Nat.testBit_shiftLeft]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Rule30SearchV2.lean:27:25: warning: This simp argument is unused:
+  Nat.testBit_or
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [unpack, show ¬p + ((K : Int) + 1) < 0 by omega, show p - 1 + (K : Int) < 0 by omega,
+    show p + (K : Int) < 0 by omega, show ¬p + 1 + (K : Int) < 0 by omega, hn0, hn1, grow, rule, Nat.testBit_xor,
+    Nat.testBit_shiftLeft]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Rule30SearchV2.lean:27:41: warning: This simp argument is unused:
+  Nat.testBit_shiftLeft
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [unpack, show ¬p + ((K : Int) + 1) < 0 by omega, show p - 1 + (K : Int) < 0 by omega,
+    show p + (K : Int) < 0 by omega, show ¬p + 1 + (K : Int) < 0 by omega, hn0, hn1, grow, rule, Nat.testBit_xor,
+    Nat.testBit_or]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`

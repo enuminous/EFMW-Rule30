@@ -1,0 +1,55 @@
+{
+  "target": "every finite zero-wall left half turns its first cell white at an even time",
+  "universal_target_proved": false,
+  "records": [
+    {
+      "width": 40,
+      "horizon_inclusive": 82,
+      "result": "unknown",
+      "solve_seconds": 10.008,
+      "reason": "timeout"
+    },
+    {
+      "width": 48,
+      "horizon_inclusive": 98,
+      "result": "unknown",
+      "solve_seconds": 10.007,
+      "reason": "timeout"
+    },
+    {
+      "width": 52,
+      "horizon_inclusive": 106,
+      "result": "unknown",
+      "solve_seconds": 10.009,
+      "reason": "timeout"
+    },
+    {
+      "width": 56,
+      "horizon_inclusive": 114,
+      "result": "unknown",
+      "solve_seconds": 10.034,
+      "reason": "timeout"
+    },
+    {
+      "width": 64,
+      "horizon_inclusive": 130,
+      "result": "unknown",
+      "solve_seconds": 10.014,
+      "reason": "timeout"
+    },
+    {
+      "width": 80,
+      "horizon_inclusive": 162,
+      "result": "unknown",
+      "solve_seconds": 10.021,
+      "reason": "timeout"
+    },
+    {
+      "width": 96,
+      "horizon_inclusive": 194,
+      "result": "unknown",
+      "solve_seconds": 10.02,
+      "reason": "timeout"
+    }
+  ]
+}
