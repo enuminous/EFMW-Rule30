@@ -11,6 +11,22 @@ The green verification badge, when present, certifies the checks below; it does
 not certify a prize solution. The full-goal checker is required to reject this
 partial attempt.
 
+## Latest result: Attempt 4 — CQ01Empty
+
+[Attempt 4](attempt4/README.md), completed October 25, 2026, investigates the
+empty-right-half reconstruction route. It includes the frozen plan, source,
+finite results, rejected candidates, and verification logs. The bounded attempt
+is complete; **`CQ01Empty` remains unproved**, and no EFMW-specific advantage was
+demonstrated.
+
+- Exact reconstruction through depth 16,384, cross-checked with a separate array
+  implementation and 128 finite truncation controls.
+- All 16,448 tested short-period/transient combinations and all 64 specified
+  binary-scale affine candidates rejected on the training data.
+- Ten theorem headlines replayed by the official Lean checker, including exact
+  transport identities and a counterexample to an apparent period-seven tail.
+  These partial results do not prove infinite support or solve Prize Problem 1.
+
 ## Build and check
 
 Install Python 3 and Lean/Lake using the pinned `lean-toolchain`, then run:
@@ -18,16 +34,21 @@ Install Python 3 and Lean/Lake using the pinned `lean-toolchain`, then run:
 ```sh
 python3 -m pip install -r requirements.txt
 python3 verify.py
+python3 attempt4/search_cq01.py --output-dir run-results/attempt4
 lake build
 python3 check_formal.py --kit .lake/packages/rule30prize --output-dir run-results
+python3 attempt4/check_attempt.py --kit .lake/packages/rule30prize --output-dir run-results/attempt4
 ```
 
 `lake-manifest.json` pins the official Rule 30 definitions to the same commit
-used for the recorded attempt. The dependency is the kit's lightweight core;
-Mathlib is not required. CI reruns the Python controls, builds the Lean modules,
-replays their theorems through the official checker, and verifies that a claim
-of a complete Problem 1 solution is rejected. New CI evidence is uploaded as a
-workflow artifact. The root JSON and log files preserve the October 24 run.
+used for both recorded attempts. The dependency is the kit's lightweight core;
+Mathlib is not required. CI checks the recorded checksums, reruns the Python
+controls, compares Attempt 4's finite outputs byte for byte, builds the Lean
+modules, replays their theorems through the official checker, and verifies that
+claims of a complete Problem 1 solution are rejected. New CI evidence is uploaded
+as a workflow artifact. The root JSON and log files preserve the October 24 run;
+`attempt4/` preserves the October 25 run. Reproduction commands above write fresh
+Attempt 4 evidence under `run-results/attempt4/`.
 
 The longer solver campaigns are available through **Actions → Verify → Run
 workflow → run_search**, or through the commands in the reproduction section.

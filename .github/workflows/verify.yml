@@ -26,6 +26,8 @@ jobs:
     steps:
       - name: Check out source
         uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+      - name: Verify recorded source and evidence checksums
+        run: sha256sum --check SHA256SUMS
       - name: Set up Python
         uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
         with:
@@ -38,6 +40,12 @@ jobs:
           mkdir -p run-results
           python verify.py
           cp verification.json run-results/verification.json
+      - name: Reproduce Attempt 4 and compare recorded finite results
+        run: |
+          python attempt4/search_cq01.py --output-dir run-results/attempt4
+          cmp attempt4/results.json run-results/attempt4/results.json
+          cmp attempt4/psi-prefix.txt run-results/attempt4/psi-prefix.txt
+          cmp attempt4/right-trace.txt run-results/attempt4/right-trace.txt
       - name: Install Lean 4.35.0 with release checksum
         shell: bash
         run: |
@@ -51,6 +59,8 @@ jobs:
         run: lake build
       - name: Replay partial proofs and reject a full-solution claim
         run: python check_formal.py --kit .lake/packages/rule30prize --output-dir run-results
+      - name: Replay Attempt 4 and reject a full-solution claim
+        run: python attempt4/check_attempt.py --kit .lake/packages/rule30prize --output-dir run-results/attempt4
       - name: Run bounded solver campaigns
         if: github.event_name == 'workflow_dispatch' && inputs.run_search
         run: |

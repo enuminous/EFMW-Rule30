@@ -1,6 +1,6 @@
 name = "efmw-rule30"
 version = "0.1.0"
-defaultTargets = ["Rule30AttemptV3"]
+defaultTargets = ["Rule30AttemptV3", "Rule30CQ01Attempt4"]
 
 [[require]]
 name = "rule30prize"
@@ -13,3 +13,7 @@ name = "Rule30SearchV2"
 
 [[lean_lib]]
 name = "Rule30AttemptV3"
+
+[[lean_lib]]
+name = "Rule30CQ01Attempt4"
+srcDir = "attempt4"
