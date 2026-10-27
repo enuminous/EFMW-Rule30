@@ -1,5 +1,36 @@
 # EFMW–Rule30
 
+<!-- ENUMINOUS-UNIFIED-NAV:START -->
+## Repository navigation
+
+**eNuminous network:** [All public repositories](https://github.com/enuminous/EFMW/blob/main/REPOSITORY_NAVIGATION.md) · [EFMW](https://github.com/enuminous/EFMW) · [102 equations](https://github.com/enuminous/Monolithic_102_EFMW) · [Frozen Lean](https://github.com/enuminous/Monolithic-102-Zoo-Lean4) · [Zoo](https://github.com/enuminous/Tortoise) · [Papers](https://github.com/enuminous/papers) · [Quantum geometry](https://github.com/enuminous/Base888-Quantum-Geometry)
+
+**This project:** [Repository home](https://github.com/enuminous/EFMW-Rule30) · [Subject index](https://github.com/enuminous/EFMW/blob/main/REPOSITORY_NAVIGATION.md#simulators-computation-and-experiments)
+
+<details open>
+<summary><strong>On this page</strong></summary>
+
+- [Latest result: Attempt 4 — CQ01Empty](#latest-result-attempt-4--cq01empty)
+- [Build and check](#build-and-check)
+- [Research record: proof attempt 3](#research-record-proof-attempt-3)
+- [1. Frozen targets and evidence levels](#1-frozen-targets-and-evidence-levels)
+- [2. Exact residual derivation and the gap](#2-exact-residual-derivation-and-the-gap)
+- [3. A proof strategy that fails: nonnegative local block scores](#3-a-proof-strategy-that-fails-nonnegative-local-block-scores)
+- [4. Constraint-solver attack on the linear bound](#4-constraint-solver-attack-on-the-linear-bound)
+- [5. Verification and anti-circularity audit](#5-verification-and-anti-circularity-audit)
+- [6. Comparison with established work](#6-comparison-with-established-work)
+- [7. What would advance the proof](#7-what-would-advance-the-proof)
+- [8. Reproduction](#8-reproduction)
+
+
+</details>
+
+**Related repositories:** [P-NP](https://github.com/enuminous/P-NP) · [EFMW](https://github.com/enuminous/EFMW) · [papers](https://github.com/enuminous/papers) · [BackroomsProtocol-EFMW-Analysis](https://github.com/enuminous/BackroomsProtocol-EFMW-Analysis) · [Ramtastic](https://github.com/enuminous/Ramtastic) · [Devs2.0](https://github.com/enuminous/Devs2.0)
+
+> **Evidence boundary:** A link between projects is navigation, not an assertion of proven equivalence, experimental validation, or shared authorship. See each repository’s own status and review notes.
+<!-- ENUMINOUS-UNIFIED-NAV:END -->
+
+
 [![Verify](https://github.com/enuminous/EFMW-Rule30/actions/workflows/verify.yml/badge.svg)](https://github.com/enuminous/EFMW-Rule30/actions/workflows/verify.yml)
 
 Reproducible EFMW-inspired Rule 30 proof research: exact residual identities,
